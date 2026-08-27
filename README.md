@@ -17,8 +17,8 @@ style.css     Full design system (tokens, layout, motion)
 script.js     Nav state, mobile menu, cursor glow, scroll reveal
 server.js     Express static server (Render-ready)
 package.json  Dependencies + start script
-logo.png      Site mark, used in the nav, footer, and favicon
-logo.svg      Vector source for the mark
+logo.png      Off-white icon mark (nav + footer, shown on the dark background)
+favicon.png   Black icon mark on transparent (browser tab, shown on light chrome)
 ```
 
 ## Running locally
@@ -49,13 +49,12 @@ no environment variables need to be set manually.
 
 ## About the logo
 
-**`logo.png` in this package is a placeholder mark** (a thin ring with a
-chevron, in the site's off-white), generated so the repo runs and looks
-correct end-to-end. No official Vantage Club logo file was provided in this
-conversation — swap `logo.png` (and `logo.svg` if you want a vector source)
-for the real logo, keeping the same filename at the repository root. Every
-reference in `index.html` already points to `logo.png` directly (not
-`assets/logo.png`), so no other changes are needed.
+`logo.png` and `favicon.png` are both cropped from the official Vantage Club
+monogram. `logo.png` is recolored to the site's off-white so it reads
+correctly on the dark background (nav + footer); `favicon.png` keeps the
+original black on a transparent square, since browser tabs are typically
+light. Both live at the repository root and are referenced directly (not
+`assets/logo.png`), per the project's file layout.
 
 ## Content policy
 
